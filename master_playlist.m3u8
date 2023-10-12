@@ -1,0 +1,11 @@
+#EXTM3U
+#EXT-X-VERSION:3
+# Video Stream
+#EXT-X-STREAM-INF:BANDWIDTH=1000000,RESOLUTION=1280x720
+output_video.m3u8
+# Audio Tracks
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="jpn",LANGUAGE="eng",DEFAULT=YES,AUTOSELECT=YES,URI="output_audio_1.m3u8"
+# Audio Tracks
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="eng",LANGUAGE="jpn",DEFAULT=YES,AUTOSELECT=YES,URI="output_audio_2.m3u8"
+# Subtitle Stream (if available)
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",LANGUAGE="en",NAME="English",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,URI="output_audio_2_vtt.m3u8"
